@@ -20,4 +20,20 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="broodTekst">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:paddingLeft">35sp</item>
+        <item name="android:textColor">#58575E</item>
+    </style>
+
+    <style name="tussenTitel" parent="Titel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:textColor">#E53935</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
 </resources>
