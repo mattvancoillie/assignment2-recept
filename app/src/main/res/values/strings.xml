@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Recept</string>
-    <string name="summary"><strong>Duur</strong> 150 Minuten (Met bereiden en laten afkoelen.)</string>
+    <string name="summary">Duur: 150 Minuten  -  Met bereiden en laten afkoelen.</string>
     <string name="inleiding">Als er één dessertje weinig introductie nodig heeft, is het wel crème brûlée. Het is een bommetje, maar dan wel eentje dat fenomenaal lekker is. Om dit gerecht perfect te maken, doe je er wel goed aan om te investeren in een kleine gasbrander waarmee je een perfect krokant suikerlaagje kan maken.</string>
+    <string name="stappenplan"></string>
 </resources>
