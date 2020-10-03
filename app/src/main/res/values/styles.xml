@@ -41,4 +41,14 @@
         <item name="android:fontFamily">@font/raleway_bold</item>
     </style>
 
+    <style name="ingredientWaarde">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
 </resources>

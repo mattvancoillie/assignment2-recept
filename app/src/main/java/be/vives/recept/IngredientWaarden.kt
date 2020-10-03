@@ -1,6 +1,6 @@
 package be.vives.recept
 
-class benodigdhedenWaarden {
+class IngredientWaarden {
     var room: Int = 6;
     var melk: Int = 6;
     var vanillestokje: Double = 0.5;

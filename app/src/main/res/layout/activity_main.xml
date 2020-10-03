@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="IngredientWaarden"
+            type="be.vives.recept.IngredientWaarden" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -17,7 +25,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="204dp"
+            android:layout_height="182dp"
             android:cropToPadding="false"
             app:srcCompat="@drawable/creme" />
 
@@ -32,27 +40,22 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:fontFamily="@font/raleway"
             android:hint="Voor hoeveel personen?"
-            android:inputType="textPersonName"
-            android:paddingLeft="25sp"
-            android:paddingTop="5sp"
-            android:paddingBottom="10dp"
-            android:textSize="15dp" />
+            android:inputType="number" />
 
         <Button
             android:id="@+id/omzettenButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pas benodigdheden aan" />
+            android:text="Pas Ingrediënten aan" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="170dp">
+            android:layout_height="171dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,11 +75,23 @@
                     android:text="Room (cl)" />
 
                 <TextView
+                    android:id="@+id/textViewRoom"
+                    style="@style/ingredientWaarde"
+                    android:text="TextView" />
+
+                <TextView
                     android:id="@+id/txtviewBenodigd2"
                     style="@style/broodTitelTekst"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Melk (cl)" />
+
+                <TextView
+                    android:id="@+id/textViewMelk"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
 
                 <TextView
                     android:id="@+id/txtviewBenodigd3"
@@ -86,11 +101,25 @@
                     android:text="Vanillestokje" />
 
                 <TextView
+                    android:id="@+id/textViewVanille"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
                     android:id="@+id/txtviewBenodigd4"
                     style="@style/broodTitelTekst"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Eieren" />
+
+                <TextView
+                    android:id="@+id/textViewEi"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
 
                 <TextView
                     android:id="@+id/txtviewBenodigd5"
@@ -100,6 +129,13 @@
                     android:text="Kristalsuiker (g)" />
 
                 <TextView
+                    android:id="@+id/textViewKSuiker"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
                     android:id="@+id/txtviewBenodigd6"
                     style="@style/broodTitelTekst"
                     android:layout_width="match_parent"
@@ -107,11 +143,25 @@
                     android:text="Bruine suiker (eetlepel)" />
 
                 <TextView
+                    android:id="@+id/textViewBSuiker"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
                     android:id="@+id/txtviewBenodigd7"
                     style="@style/broodTitelTekst"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="kristalsuiker  (eetlepel)" />
+
+                <TextView
+                    android:id="@+id/textViewKSuikerEL"
+                    style="@style/ingredientWaarde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
 
                 <TextView
                     android:id="@+id/benodigdhedenTitel"
@@ -190,3 +240,4 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
