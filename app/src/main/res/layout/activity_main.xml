@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -12,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -43,39 +43,58 @@
             android:textColor="#4C4C4C"
             android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/inleidingRecept"
+        <EditText
+            android:id="@+id/editTextTextPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/buenard"
-            android:paddingLeft="25dp"
-            android:paddingTop="10dp"
-            android:paddingRight="25dp"
+            android:ems="10"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:paddingLeft="25sp"
+            android:paddingTop="5sp"
             android:paddingBottom="10dp"
-            android:text="@string/inleiding"
-            android:textColor="#3E3D43"
-            android:textSize="24sp" />
+            android:text="Voor hoeveel personen?"
+            android:textSize="15dp" />
 
-        <TextView
-            android:id="@+id/benodigdhedenTitel"
-            style="@style/Titel"
-            android:text="Benodigdheden" />
-
-        <TextView
-            android:id="@+id/titelStappen"
-            style="@style/Titel"
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stappenplan" />
+            android:text="Pas benodigdheden aan"
+            android:textColorLink="#E53935" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="170dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/benodigdhedenTitel"
+                    style="@style/Titel"
+                    android:text="Benodigdheden" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="177dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titelStappen"
+                    style="@style/Titel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stappenplan" />
 
                 <TextView
                     android:id="@+id/titelStap1"
@@ -88,7 +107,8 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="35dp"
                     android:paddingRight="30dp"
-                    android:text="@string/stap1" />
+                    android:text="@string/stap1"
+                    android:textColor="#3C3F41" />
 
                 <TextView
                     android:id="@+id/titelStap2"
@@ -106,12 +126,14 @@
 
                 <TextView
                     android:id="@+id/titelStap3"
+                    style="@style/tussenTitel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Afwerking" />
 
                 <TextView
                     android:id="@+id/stapTekst3"
+                    style="@style/broodTekst"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/stap3" />
@@ -121,4 +143,3 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
