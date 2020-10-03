@@ -31,38 +31,24 @@
             android:textColor="#F4511E"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/duurRecept"
-            android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:fontFamily="@font/raleway"
-            android:paddingLeft="25dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="5dp"
-            android:text="@string/summary"
-            android:textColor="#4C4C4C"
-            android:textSize="12sp" />
-
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/raleway"
+            android:hint="Voor hoeveel personen?"
             android:inputType="textPersonName"
             android:paddingLeft="25sp"
             android:paddingTop="5sp"
             android:paddingBottom="10dp"
-            android:text="Voor hoeveel personen?"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/button2"
-            style="@android:style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/omzettenButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pas benodigdheden aan"
-            android:textColorLink="#E53935" />
+            android:text="Pas benodigdheden aan" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -74,15 +60,76 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/benodigdhedenTitel"
+                    android:id="@+id/IngredientenTitel"
                     style="@style/Titel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrediënten" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd"
+                    style="@style/broodTitelTekst"
+                    android:text="Room (cl)" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd2"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Melk (cl)" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd3"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vanillestokje" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd4"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eieren" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd5"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kristalsuiker (g)" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd6"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bruine suiker (eetlepel)" />
+
+                <TextView
+                    android:id="@+id/txtviewBenodigd7"
+                    style="@style/broodTitelTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="kristalsuiker  (eetlepel)" />
+
+                <TextView
+                    android:id="@+id/benodigdhedenTitel"
+                    style="@style/tussenTitel"
                     android:text="Benodigdheden" />
+
+                <TextView
+                    android:id="@+id/benodighedenText"
+                    style="@style/broodTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/benodigdheden" />
             </LinearLayout>
         </ScrollView>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="177dp">
+            android:layout_height="224dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
